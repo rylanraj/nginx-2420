@@ -1,6 +1,6 @@
 # Linux Assignment 3
 
-# Step 1: Install all necessary software
+# Step 1: Install/Update software
 
 - a: Update pacman
 - b: Install Vim
@@ -199,11 +199,12 @@ http {
     include sites-enabled/*;
 }
 ```
-
+Make sure to write-quit out of Vim by pressing ESCAPE and then :wq
+Since we made changes to nginx.conf, restart nginx
 ```bash
 sudo systemctl restart nginx
 ```
-Make sure to write-quit out of Vim by pressing ESCAPE and then :wq
+
 
 ## d: Serve HTML page using git
 
