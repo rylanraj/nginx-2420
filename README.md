@@ -9,7 +9,7 @@
 
 ## a: Update pacman
 
-So Before we begin, we need to make sure we have all the software we need to complete this activity and all that software is up to date
+Before we begin, we need to make sure we have all the software we need to complete this activity and all that software is up to date
 
 Run the following command to update all currently installed pacman packages before we can install new ones:
 
