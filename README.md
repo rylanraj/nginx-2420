@@ -291,3 +291,4 @@ Once you do this, GitHub will ask you to login. Enter your Username as Normal BU
 Instead, you must go to your GitHub developer settings and generate a new classic access token and use that in place of your password.
 
 Once you have done this, use sudo systemctl reload nginx. Then open your browser and enter in your droplet’s IP address. If you did everything correct, you should see your webpage.
+![image](https://github.com/rylanraj/nginx-2420/assets/76143775/6528c75a-40d3-4e7d-8438-5955f7870482)
