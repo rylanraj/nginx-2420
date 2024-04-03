@@ -163,7 +163,7 @@ Now you can access the server block from **example.conf** in **nginx.conf**
 ```bash
 sudo vim nginx.conf
 ```
-Copy and paste the following into **nginx.conf**
+Copy and paste the nginx.conf file I provided you below into **nginx.conf**
 OR
 Delete the existing server block in your **nginx.conf** file yourself and just add this line at the end of your http block
 ```bash
@@ -206,6 +206,7 @@ http {
 }
 ```
 Make sure to write-quit out of Vim by pressing ESCAPE and then :wq
+
 Since we made changes to nginx.conf, restart nginx
 ```bash
 sudo systemctl restart nginx
