@@ -92,7 +92,7 @@ sudo mkdir sites-enabled
 cd sites-available
 sudo vim example.conf
 ```
-
+Copy and paste the following
 ## example.conf
 
 ```bash
@@ -143,7 +143,7 @@ server {
     }
 ```
 
-Make sure to wq out of vim.
+Make sure to write-quit out of Vim by pressing ESCAPE and then :wq
 
 ## c: Link the new configuration file
 
@@ -160,7 +160,10 @@ ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/
 Remember to check your configurations with 'sudo nginx -t'. If the output states that the configuration file test is successful, you can proceed to reload Nginx.
 
 Now you can access the server block from **example.conf** in **nginx.conf**
-
+```bash
+sudo vim nginx.conf
+```
+Copy and paste the following into **nginx.conf**
 ```bash
 #user http;
 worker_processes  1;
@@ -200,6 +203,7 @@ http {
 ```bash
 sudo systemctl restart nginx
 ```
+Make sure to write-quit out of Vim by pressing ESCAPE and then :wq
 
 ## d: Serve HTML page using git
 
