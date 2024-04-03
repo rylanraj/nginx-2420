@@ -90,7 +90,7 @@ cd /etc/nginx
 sudo mkdir sites-available
 sudo mkdir sites-enabled
 cd sites-available
-vim example.conf
+sudo vim example.conf
 ```
 
 ## example.conf
