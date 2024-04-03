@@ -164,6 +164,12 @@ Now you can access the server block from **example.conf** in **nginx.conf**
 sudo vim nginx.conf
 ```
 Copy and paste the following into **nginx.conf**
+OR
+Delete the existing server block in your **nginx.conf** file yourself and just add this line at the end of your http block
+```bash
+include sites-enabled/*;
+```
+## nginx.conf
 ```bash
 #user http;
 worker_processes  1;
