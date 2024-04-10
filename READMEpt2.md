@@ -30,7 +30,7 @@ sudo ufw allow ssh
 ```
 
 
-Since we’re working with web servers we also want to allow HTTP, and port 8080 (for our proxy in the later steps)
+Since we’re working with web servers we also want to allow **HTTP**, and port **8080** (for our reverse proxy in the later steps)
 
 ```bash
 sudo ufw allow http
