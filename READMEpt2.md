@@ -1,6 +1,6 @@
 # Linux Assignment 3 part 2
 
-We are going to add a firewall using **ufw**, first install **ufw** with **pacman**
+We are going to add a firewall using **ufw**, first install ufw with **pacman**
 
 ```bash
 sudo pacman -S ufw
