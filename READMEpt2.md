@@ -12,7 +12,7 @@ Now enable and start the service with **systemctl**
 sudo systemctl enable --now ufw.service
 ```
 
-We can check the status of ufw with the command
+We can check the status of **ufw** with the command
 
 ```bash
 sudo ufw status verbose
