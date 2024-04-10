@@ -162,6 +162,8 @@ sudo nginx -t # This is supposed to say all configuration files OK and test is S
 sudo systemctl restart nginx # We have to restart since we changed the .conf file
 ```
 
+## Testing with Postman
+
 Now we will test connecting to the backend, I will be using **Postman** to do so
 
 This will test **YOUR_DROPLET_IP_ADDRESS/hey**, via HTTP GET
