@@ -59,9 +59,9 @@ sftp  -i .ssh/do-key name@ServerIPAddress #Change this as needed
 sftp archlinux # Replace archlinux with what you put as the host in your SSH config file
 ```
 
-Once you’ve done this, we need to run put, to put the hello-server file in your droplet.
+Once you’ve done this, we need to run **put**, to put the **hello-server** file in your droplet.
 
-Put it in your home directory or you may get a “Permission Denied”
+Put it in your **home directory** or you may get a **“Permission Denied”**
 
 ```powershell
 put hello-server/home/YOUR-USERNAME #Change YOUR-USERNAME
