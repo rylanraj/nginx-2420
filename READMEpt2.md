@@ -162,7 +162,7 @@ This will test **YOUR_DROPLET_IP_ADDRESS/hey**, via HTTP GET
 
 The response body should be “Hey there”
 
-![Untitled](Linux%20Assignment%203%20part%202%20e88d9dc15ade46369d525f0245d0ebee/Untitled.png)
+![Untitled](https://github.com/rylanraj/nginx-2420/assets/76143775/d417f68a-7a36-4d80-8229-f8b80bf50b34)
 
 This will test **YOUR_DROPLET_IP_ADDRESS/echo**, via HTTP POST
 
@@ -172,4 +172,5 @@ The response body should be
 "message": "Hello from your server"
 }
 
-![Untitled](Linux%20Assignment%203%20part%202%20e88d9dc15ade46369d525f0245d0ebee/Untitled%201.png)
+![Untitled 1](https://github.com/rylanraj/nginx-2420/assets/76143775/bd2cc52c-840d-4f9d-8a96-877a0f499d9d)
+
