@@ -51,13 +51,13 @@ sudo ufw status verbose
 
 ## Moving the backend bin
 
-We will be using **sftp** to move the provided **hello-server** file into our droplet
+We will be using `sftp` to move the provided **hello-server** file into our droplet
 
 Make sure on your **host machine** has the **hello-server** file in your **C:\Users\YOUR-USERNAME**
 
-This is because sftp will look here specifically for the file
+This is because `sftp` will look here specifically for the file
 
-Now, start sftp between your host and your droplet
+Now, start `sftp` between **your host** and **your droplet**
 
 ```powershell
 sftp  -i .ssh/do-key name@ServerIPAddress #Change this as needed
@@ -77,7 +77,7 @@ exit
 
 Now we will move this file to a more logical location, since this file is a backend file for our server, we will move it to **/usr/local/bin/backend**
 
-(Make sure to SSH back into your droplet first
+(Make sure to `ssh` back into your droplet first
 
 ```bash
 sudo mv hello-server /usr/local/bin/backend 
@@ -86,7 +86,7 @@ sudo chmod u+x /usr/local/bin/backend #It also has to be executable for the next
 
 ## Setting up the service file to start the backend
 
-Now we will write a service file to start the backend
+Now we will write a **service file** to start the backend
 
 Service files are usually in **/etc/systemd/system**
 
@@ -111,7 +111,7 @@ WantedBy=multi-user.target
 # Then, CTRL-C or ESCAPE, followed by :wq to write quit out of the file
 ```
 
-Using **systemctl** start and enable this new service we made
+Using `systemctl` to **start** and **enable** this new service we made
 
 ```bash
 sudo systemctl start backend
@@ -120,15 +120,15 @@ sudo systemctl enable backend
 
 ## Setting up the reverse proxy to the backed
 
-Now we will set up a reverse proxy server to the backend binary on our system.
+Now we will set up a **reverse proxy server** to the **backend binary** on our system.
 
-First, we need to vim into the example configuration file we made back in part 1
+First, we need to vim into the example configuration file called **example.conf** that we made back in **part 1**
 
 ```bash
 sudo vim /etc/nginx/sites-available/nginx-2420/example.conf
 ```
 
-Then we need to add this code INSIDE the server block
+Then we need to add this code **INSIDE** the server block
 
 ```bash
 # add this INSIDE the server block, it defines the proxy settings
@@ -155,7 +155,7 @@ location /echo {
 # Then, CTRL-C or ESCAPE, followed by :wq to write quit out of the file
 ```
 
-Since we changed an nginx configuration file, we need to test if the changes we made were okay, with the following commands
+Since we changed an **nginx configuration file**, we need to test if the changes we made were okay, with the following commands
 
 ```bash
 sudo nginx -t # This is supposed to say all configuration files OK and test is SUCCESSFUL, if an error occurs redo the steps
