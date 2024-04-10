@@ -2,13 +2,13 @@
 
 We are going to add a firewall using `ufw` 
 
-First install `ufw` with `pacman`
+First we need to install `ufw` with `pacman`
 
 ```bash
 sudo pacman -S ufw
 ```
 
-Now enable and start the service with **systemctl**
+Now enable and start the service with `systemctl`
 
 ```bash
 sudo systemctl enable --now ufw.service
