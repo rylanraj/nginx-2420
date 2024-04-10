@@ -182,3 +182,4 @@ The response body should be
 
 ![Untitled 1](https://github.com/rylanraj/nginx-2420/assets/76143775/bd2cc52c-840d-4f9d-8a96-877a0f499d9d)
 
+Make sure you replace the fields with your droplet's IP address, other wise you'll be sending requests to **my droplet** and thinking your tests were successful when they may not have been
