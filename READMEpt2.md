@@ -133,7 +133,7 @@ Then we need to add this code **INSIDE** the server block
 ```bash
 # add this INSIDE the server block, it defines the proxy settings
 location /hey {
-		# The 'proxy_set_header' directives are used to pass headers from the original request, to the proxy server.
+# The 'proxy_set_header' directives are used to pass headers from the original request, to the proxy server.
     proxy_pass http://127.0.0.1:8080;
     proxy_http_version 1.1;
     proxy_set_header Host $host;
