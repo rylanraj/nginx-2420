@@ -22,11 +22,13 @@ sudo ufw status verbose
 
 This should be **inactive** since we just installed `ufw` for the first time
 
+
 > :warning: **Warning: Make sure to allow ssh so you don't get blocked out of your droplet forever**
 
 ```bash
 sudo ufw allow ssh
 ```
+
 
 Since we’re working with web servers we also want to allow HTTP, and port 8080 (for our proxy in the later steps)
 
