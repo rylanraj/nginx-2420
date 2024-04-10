@@ -47,7 +47,9 @@ sudo ufw status verbose
 
 ## Moving the backend bin
 
-Make sure on your host machine has the hello-server file in your **C:\Users\YOUR-USERNAME**
+We will be using **sftp** to move the provided **hello-server** file into our droplet
+
+Make sure on your **host machine** has the **hello-server** file in your **C:\Users\YOUR-USERNAME**
 
 This is because sftp will look here specifically for the file
 
@@ -59,7 +61,7 @@ sftp  -i .ssh/do-key name@ServerIPAddress #Change this as needed
 sftp archlinux # Replace archlinux with what you put as the host in your SSH config file
 ```
 
-Once you’ve done this, we need to run **put**, to put the **hello-server** file in your droplet.
+Once you’ve done this, we need to run the **put**, to put the **hello-server** file in your droplet.
 
 Put it in your **home directory** or you may get a **“Permission Denied”**
 
